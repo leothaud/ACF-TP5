@@ -1,3 +1,9 @@
 *.class
 *.log
 \#*
+/target
+/project
+/.vscode
+/.metals
+/.bsp
+/.bloop
