@@ -1,4 +1,4 @@
-package simplifier.<LE_NOM_DE_VOTRE_BINOME>
+package simplifier.Leothaud_Rodet_TP5
 
 import library._
 
