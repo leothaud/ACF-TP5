@@ -3,15 +3,19 @@ package main
 import library._
 import org.junit.Assert._
 import org.junit.Test
-import simplifier.<LE_NOM_DE_VOTRE_BINOME>._
+import simplifier.Leothaud_Rodet_TP5._
 
 class TestSimplify {
+  def launchTest(input : String ,result : String){
+    val simp = new MySimplifier
+    val pIn = Parser.parseSymbolList(input)
+    val pRes = Parser.parseSymbolList(result)
+
+
+    assertEquals(pRes, simp.simplify(pIn))
+  }
   @Test
-  def t0(){
-    val simp= new MySimplifier
-    val p= List(Star)
-    val pres= List(Star)
-    
-    assertEquals(pres, simp.simplify(p))
+  def unit_1() {
+    launchTest("a", "a")
   }
 }
